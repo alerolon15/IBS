@@ -115,6 +115,11 @@ section ul li:before {
 	color: #23AD21;
 }
 
+.Serviciosli li{
+	color: #FFF;
+	margin-left: 0;
+}
+
 /*--------------------
 1.1 Reset bootstrap
 --------------------*/
