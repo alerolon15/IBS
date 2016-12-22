@@ -490,7 +490,7 @@
 							<div class="row">
 								<div class="col-lg-12 text-center">
 									<div id="success"></div>
-									<button type="submit" class="btn">Enviar</button>
+									<button class="btn" onclick="sendMail(); return false">Enviar</button>
 								</div>
 							</div>
 						</form>
@@ -618,5 +618,14 @@
 		<script src="js/jquery.appear.js"></script>
 		<script src="js/SmoothScroll.min.js"></script>
 		<script src="js/mooz.themes.scripts.js"></script>
+		<script>
+			function sendMail() {
+				var link = "mailto:contacto@ibs-seguridad.com"
+				+ "?cc=jose.evaristo.marro@gmail.com"
+				+ "&subject=Tema"
+				+ "&body=Body";
+				window.location.href = link;
+			}
+		</script>
 	</body>
 </html>
